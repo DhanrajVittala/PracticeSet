@@ -6,9 +6,17 @@ public class Arrays1 {
 		
 		int n = arr.length - 1;
 		int k=3;
-
+		
+        // reverse the entire array in original array
+		//{3,9,5,1,2,8,6,5}
 		swapArray(arr, 0, n);
+		
+		//reverse the first 3 postion
+		//{5,9,3,1,2,8,6,5}
 		swapArray(arr,0,k-1);
+		
+		//reverse the remaining array
+		//{5,9,3,5,6,8,2,1}
 		swapArray(arr,k,n);
 
 		for (int i = 0; i < arr.length; i++) {
